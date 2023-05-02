@@ -305,7 +305,7 @@ background: linear-gradient(to bottom right, #02192b, #000fb6);
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
-        gap: 2rem;
+        gap: 4rem;
     }
 
     
