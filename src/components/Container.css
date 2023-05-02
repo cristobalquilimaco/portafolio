@@ -81,7 +81,7 @@ padding: 2rem;
 .skills__cards{
     display: flex;
     flex-direction: column;
-    gap: 3rem;
+    gap: 2rem;
     justify-content: center;
     align-items: center;
    
@@ -305,9 +305,7 @@ background: linear-gradient(to bottom right, #02192b, #000fb6);
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
-        gap: 4rem;
-        width: 400px;
-        height: 700px;
+        gap: 2rem;
     }
 
     
