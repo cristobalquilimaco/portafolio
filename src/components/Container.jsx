@@ -12,10 +12,10 @@ const Container = () => {
         <div className='banner'>
         <div className='information__me'>
         <img className="banner__img" src={images.banner} alt="" />
-            <h1 className='presentation'>My name is Cristobal<span className='prenstation_border'>A fronted developer</span>I live in Bogota</h1>
+            <h1 className='presentation'>Hello! I'm Cristóbal Quilimaco <span className='prenstation_border'>A fronted developer</span>I live in Bogota</h1>
             </div>
 
-            <p className="information_cut">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ea modi minus eaque tenetur consequuntur, voluptatum reiciendis! Praesentium quidem quasi odio enim repellendus omnis officiis expedita error perspiciatis. Ut, quam.</p>
+            <p className="information_cut">I am committed to constant learning and continuous improvement. I love thinking outside the box and finding creative solutions to web development problems. I believe that my passion for technology and my work ethic make me an ideal candidate for any web development project.</p>
 
         </div>
         <div className='skills'>
