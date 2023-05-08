@@ -98,7 +98,7 @@ const Container = () => {
         <div className='container_proyects'>
         <div className='iformation_proyect'>
             <p>My proyects</p>
-            <p>Work that i ve done for pasta 8 years</p>
+            <p>These are some of the projects I've worked on</p>
             </div>
             <div className="card__proyect">
             <img className="proyect__img" src={images.img1} alt="" />
