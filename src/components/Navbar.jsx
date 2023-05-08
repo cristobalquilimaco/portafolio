@@ -29,7 +29,7 @@ const Navbar = () => {
         </div>
        
         <div className={menuClass}>
-            <a href="home"><h1 className="logo">Cristobal Quilimaco</h1></a>
+            <a href="#home"><h1 className="logo">Cristobal Quilimaco</h1></a>
         <ul className="aditional__list">
         <a href="#about" onClick={updateMenu}><li className="">About me</li></a>
         <a href="#portafolio" onClick={updateMenu}><li className="">Portafolio</li></a>

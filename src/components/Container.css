@@ -6,6 +6,8 @@ body{
     
 }
 
+
+
 :root{
     --cardColor: linear-gradient(to left, #161111, #1e1e53, #161111, #1e1e53 );
     --information-Color1: #161111;
@@ -20,9 +22,11 @@ body{
     --card--information-color: #181823;
 }
 
+
+
 .banner{
     background-color: rgba(255, 0, 0, 0.13);
-  
+
 }
 
 .banner__img{
@@ -33,6 +37,7 @@ margin: 0;
 
 body{
     margin: 0;
+
 }
 
 .information__me{
