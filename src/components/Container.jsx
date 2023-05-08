@@ -118,7 +118,7 @@ const Container = () => {
                 <div className="card__proyect">
              <img className="proyect__img" src={images.img4} alt="" />
                 <p>Description</p>
-                <p>La aplicación creada con React es una aplicación web que permite a los usuarios explorar los personajes de la popular serie de televisión "Rick and Morty". La aplicación utiliza una API de personajes de "Rick and Morty" para obtener información sobre los personajes y mostrarla en la pantalla.</p>
+                <p>The application built with React is a web application that allows users to explore the characters of the popular television series "Rick and Morty". The app uses a "Rick and Morty" character API to get character information and display it on the screen.</p>
                 </div>    
 
         </div>
