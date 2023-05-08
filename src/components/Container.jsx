@@ -8,7 +8,7 @@ const Container = () => {
 
 
   return (
-    <div className="principal__container">
+    <div className="principal__container" id="home">
         <div className='banner'>
         <div className='information__me'>
         <img className="banner__img" src={images.banner} alt="" />
@@ -20,40 +20,40 @@ const Container = () => {
         </div>
         <div className='skills'>
             <div className='description__work'>
-            <p className="work__experience">Work experiences</p>
-            <h2 className="work_information">Companies Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae, autem minima, iure corporis </h2>
+            <p className="work__experience">Applied studies</p>
+            <h2 className="work_information">Some recent learnings</h2>
             </div>
                     <div className="skills__cards">
             <div className='description__skills'>
             <p className='number_writer'>01</p>
             <p className="react">React</p>
-            <p>Companies Lorem, ipum dolor sit amet consectetur adipisicing elit. Quae, autem minima, iure corporis </p>
+            <p>I learned React through a combination of research Through Academlo, practice, and participation in developer communities.</p>
             </div>
 
             <div className='description__skills'>
             <p className='number_writer'>02</p>
             <p className="javascript">JavaScript</p>
-            <p>Companies Lorem, ipum dolor sit amet consectetur adipisicing elit. Quae, autem minima, iure corporis </p>
+            <p>Aprendí nuevos conocimientos y técnicas a través de cursos, documentación oficial y de la práctica constante. </p>
             </div>
 
 
             <div className='description__skills'>
             <p className='number_writer'>03</p>
             <p className="html__css">HTML CSS</p>
-            <p>Companies Lorem, ipum dolor sit amet consectetur adipisicing elit. Quae, autem minima, iure corporis </p>
+            <p>In terms of practice, I worked on increasingly complex projects, using HTML and CSS to design and develop websites and web applications. </p>
             
             </div>
                     </div>
             
         </div>
-        <div className='more_about_me'>
+        <div className='more_about_me' id="about">
             <h3>More about me</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil temporibus maxime saepe porro voluptates delectus corrupti odit officia reprehenderit, aliquid, perferendis sit? Corrupti error, obcaecati nemo adipisci cumque praesentium voluptates.</p>
+            <p>Despite my self-taught background, I have always known that I needed a formal education to consolidate my knowledge and take my career to the next level. Therefore, I am currently studying at Academlo, a recognized educational institution in the field of web development and digital technology.</p>
             <a  className="check_linkeding" href="#">Check my linkedin</a>
         </div>
         <div className='container_information'>
             <h1>Skillset</h1>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde recusandae qui velit, cupiditate explicabo omnis? Et eaque vitae, nemo incidunt expedita illo praesentium explicabo debitis. Sit veritatis facere nulla eligendi?</p>
+            <p>These are the additional languages ​​and applications that I use as a web developer</p>
             <div className="bx_skill">
                 <div>
             <i className='bx bxs-extension'></i>
@@ -95,48 +95,39 @@ const Container = () => {
             </div>
 
         </div>
-        <div className='container_proyects'>
+        <div className='container_proyects' id="portafolio">
         <div className='iformation_proyect'>
             <p>My proyects</p>
             <p>These are some of the projects I've worked on</p>
             </div>
             <div className="card__proyect">
             <img className="proyect__img" src={images.img1} alt="" />
-                <p>description</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore cum qui voluptatem nisi nobis labore eum, nostrum corrupti maxime exercitationem neque voluptatibus reiciendis officiis expedita provident dolor natus quia iste?</p>
+                <p>Description</p>
+                <p>The e-commerce project was a valuable experience to improve skills in web development using JavaScript, HTML and CSS. A functional and visually attractive website was implemented, with a satisfactory user experience.</p>
                 </div>
                 <div className="card__proyect">
              <img className="proyect__img" src={images.img2} alt="" />
-                <p>description</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore cum qui voluptatem nisi nobis labore eum, nostrum corrupti maxime exercitationem neque voluptatibus reiciendis officiis expedita provident dolor natus quia iste?</p>
+                <p>Description</p>
+                <p>The project includes a registration form for users to enter their personal information, such as their name, email address, and password.</p>
                 </div> 
                 <div className="card__proyect">
             <img className="proyect__img" src={images.img3} alt="" />
-                <p>description</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore cum qui voluptatem nisi nobis labore eum, nostrum corrupti maxime exercitationem neque voluptatibus reiciendis officiis expedita provident dolor natus quia iste?</p>
+                <p>Description</p>
+                <p>The weather app is a web application developed with React that allows users to check the weather forecast for any location in the world. The app uses a weather services API to get accurate data on current weather conditions</p>
                 </div> 
                 <div className="card__proyect">
              <img className="proyect__img" src={images.img4} alt="" />
-                <p>description</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore cum qui voluptatem nisi nobis labore eum, nostrum corrupti maxime exercitationem neque voluptatibus reiciendis officiis expedita provident dolor natus quia iste?</p>
+                <p>Description</p>
+                <p>La aplicación creada con React es una aplicación web que permite a los usuarios explorar los personajes de la popular serie de televisión "Rick and Morty". La aplicación utiliza una API de personajes de "Rick and Morty" para obtener información sobre los personajes y mostrarla en la pantalla.</p>
                 </div>    
 
         </div>
 
 
-        <div className='portfolios'>
-            <h4>Behance</h4>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et sint temporibus dolorem quo consectetur, id culpa dolor officiis, aperiam laudantium, rerum unde aut ipsam quam. Totam ipsa ad temporibus reiciendis!</p>
-            <p>follow in my </p>
-        </div>
-        <div className='aditionals'>
-            <div>
-            <img src="" alt="" />
-            <h5>Proyect</h5>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga molestiae dolore ut nobis voluptas consequatur autem velit, odit laudantium atque earum nihil eveniet laborum. Quasi sed nisi ullam autem voluptate?</p>
-            <p>Click more</p>
-            </div>
-            <form className="form__contact" action="">
+
+        <div className='aditionals' id="contact">
+
+            <form className="form__contact">
                 <p>Let's talk bussiness</p>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam non error </p>
                 <p>Nombre</p>

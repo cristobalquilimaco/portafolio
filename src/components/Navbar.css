@@ -22,43 +22,28 @@ ul{
     text-decoration: none;
 }
 
-/* .menu ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+.img__menu{
+  width: 100%;
+  aspect-ratio: 1.5;
+display: flex;
+flex-wrap: wrap;
+flex-direction: row;
+justify-content: space-around;
+position: fixed;
+bottom: -240px;
 
-  }
-  
-  .menu li {
-    margin: 20px 0;
+}
 
-  }
-  
-  .menu li a {
-    color: #ffffff;
-    font-size: 24px;
-    text-decoration: none;
-  } */
-  
-  /* .menu ul.aditional__list {
-    margin-top: 100px;
-    display: flex;
-    flex-direction: column;
-  } */
-  
-  /* .menu ul.aditional__list {
-    font-size: 18px;
-  }
+.logo__skils{
+  width: 15%;
+  height: 15%;
 
-  .aditional__list{
-    
-    color: white;
-    display: flex;
-    flex-direction: row;
 
-    justify-content: center;
+object-fit: contain;
 
-  } */
+}
+
+
 
 .burger__menu{
     padding: 0.2rem;
@@ -78,25 +63,7 @@ ul{
     border-radius: 1rem;
 }
 
-/* .menu{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    width: 100%;
-    height: 100vh;
-    background-color: var(--card--information-color);
-    position: absolute;
-    top: 0;
-    z-index: -1;
 
-} */
-
-/* sliding menu */
-
-
-
-
-/* Animations */
 
 .burger-bar.clicked:nth-child(1) {
     transform: rotate(44deg) translate(0.5em, 0.5em);
@@ -191,9 +158,7 @@ display: none;
     }
 
 
-    /* .menu{
-        display: none;
-    } */
+
 
     .menu__nav{
         font-family: 'Sen', sans-serif;
@@ -205,11 +170,24 @@ display: none;
         align-items: center;
         position: fixed;
     }
+
+
+    .img__menu{
+ display: none;
+    
+    }
+    
+    .logo__skils{
+display: none;
+    
+    }
     
 }
 
 @media (max-width: 700px){
 
+
+  
 
     .menu{
         display: flex;
@@ -227,19 +205,19 @@ display: none;
     }
 
     .logo {
-        color: #fff; /* color inicial del texto */
-        animation: iluminar 2s linear infinite; /* animación de 2 segundos, lineal y repetitiva */
+        color: #fff; 
+        animation: iluminar 2s linear infinite; 
       }
       
       @keyframes iluminar {
         0% {
-          color: #fff; /* color inicial del texto */
+          color: #fff;
         }
         50% {
-          color: #1c74f8; /* color de iluminación */
+          color: #1c74f8; 
         }
         100% {
-          color: #fff; /* color final del texto */
+          color: #fff; 
         }
       }
 
@@ -253,14 +231,14 @@ display: none;
     }
 
     .menu ul.aditional__list {
-        margin-top: 100px;
+        margin-top: 70px;
         display: flex;
         flex-direction: column;
       }
 
         
   .menu ul.aditional__list {
-    font-size: 18px;
+    font-size: 22px;
   }
 
   .aditional__list{

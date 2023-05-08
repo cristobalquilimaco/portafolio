@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./Navbar.css";
+import images from "../assets/images";
 
 const Navbar = () => {
   const [burgerClass, setBurgerClass] = useState("burger-bar unclicked");
@@ -28,12 +29,18 @@ const Navbar = () => {
         </div>
        
         <div className={menuClass}>
-            <h1 className="logo">Cristobal Quilimaco</h1>
+            <a href="home"><h1 className="logo">Cristobal Quilimaco</h1></a>
         <ul className="aditional__list">
-          <li className="">About me</li>
-          <li className="">Portfolio</li>
-          <li className="">Contact</li>
+        <a href="#about" onClick={updateMenu}><li className="">About me</li></a>
+        <a href="#portafolio" onClick={updateMenu}><li className="">Portafolio</li></a>
+        <a href="#contact" onClick={updateMenu}><li className="">Contact</li></a>
         </ul>
+        <div className="img__menu">
+          <img className="logo__skils" src={images.logoreact} alt="" />
+          <img className="logo__skils" src={images.logojs} alt="" />
+          <img className="logo__skils" src={images.logocss} alt="" />
+          <img className="logo__skils" src={images.logohtml} alt="" />
+        </div>
 
 </div>
       </nav>

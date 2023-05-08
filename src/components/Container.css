@@ -209,6 +209,8 @@ text-align: center;
     .card__proyect{
         max-width: 400px;
         min-width: 400px;
+        max-height: 400px;
+        min-height: 400px;
         background-color: var(--cardColor); 
         text-align: center;
         display: flex;
@@ -310,6 +312,7 @@ background: linear-gradient(to bottom right, #02192b, #000fb6);
 
     
     .bx_skill{
+        margin-top: 100px;
         display: flex;
         flex-direction: row;
         justify-content: space-around;
@@ -382,8 +385,8 @@ width: 450px;
 .information_cut{
     position: absolute;
     width: 500px;
-    top: 400px;
-    left: 500px;
+    top: 300px;
+    left: 650px;
     color: var(--letter-Color);
 }
 
