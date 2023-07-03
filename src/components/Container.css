@@ -51,12 +51,97 @@ body{
 
 }
 
-
+.about_me{
+    font-size: 25px;
+    margin: 3rem;
+}
 
 .presentation{
-    font-size: 30px;
-
+    font-size: 20px;
+    animation: move 1s infinite;
+    transition: move.8s ease-in;
 }
+
+@keyframes wave {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0); }
+  }
+  
+  .presentation {
+    display: inline-block;
+  }
+  
+  .presentation span {
+    animation: wave 2s linear infinite;
+  }
+  
+  .presentation span:nth-child(1) {
+    animation-delay: 0s;
+  }
+  
+  .presentation span:nth-child(2) {
+    animation-delay: 0.1s;
+  }
+  
+  .presentation span:nth-child(3) {
+    animation-delay: 0.2s;
+  }
+
+  /* // ANIMATION */
+
+  @keyframes shine {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 0; }
+  }
+  
+  .presentation {
+    display: inline-block;
+  }
+  
+  .presentation span {
+    animation: shine 3s linear infinite;
+
+  }
+  
+  .presentation span:nth-child(1) {
+    animation-delay: 0s;
+  }
+  
+  .presentation span:nth-child(2) {
+    animation-delay: 0.1s;
+  }
+  
+  .presentation span:nth-child(3) {
+    animation-delay: 0.4s;
+  }
+
+  .skill_about_me{
+display: flex;
+align-items: center;
+flex-direction: row-reverse;
+justify-content: center;
+
+  }
+
+  @keyframes appearFromRight {
+    0% {
+      opacity: 0;
+      transform: translateX(100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  .banner__img2 {
+    animation: appearFromRight 1s linear forwards;
+    width: 400px;
+
+  }
+
 
 .prenstation_border{
     display: block;
@@ -79,6 +164,17 @@ padding: 2rem;
     flex-direction: column;
     padding: 2rem;
     
+}
+
+.logos_description{
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 1rem;
+}
+
+.logo_skill{
+    width: 50px;
 }
 
 

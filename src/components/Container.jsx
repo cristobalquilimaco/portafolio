@@ -12,48 +12,19 @@ const Container = () => {
         <div className='banner'>
         <div className='information__me'>
         <img className="banner__img" src={images.banner} alt="" />
-            <h1 className='presentation'>Hello! I'm Cristóbal Quilimaco <span className='prenstation_border'>A fronted developer</span>I live in Bogota</h1>
+            <h1 className='presentation'>Cristobal Quilimaco <span className='prenstation_border'>Desarrollador Front-End</span>Bogotá</h1>
             </div>
-
-            <p className="information_cut">I am committed to constant learning and continuous improvement. I love thinking outside the box and finding creative solutions to web development problems. I believe that my passion for technology and my work ethic make me an ideal candidate for any web development project.</p>
 
         </div>
-        <div className='skills'>
-            <div className='description__work'>
-            <p className="work__experience">Applied studies</p>
-            <h2 className="work_information">Some recent learnings</h2>
-            </div>
-                    <div className="skills__cards">
-            <div className='description__skills'>
-            <p className='number_writer'>01</p>
-            <p className="react">React</p>
-            <p>I learned React through a combination of research Through Academlo, practice, and participation in developer communities.</p>
-            </div>
-
-            <div className='description__skills'>
-            <p className='number_writer'>02</p>
-            <p className="javascript">JavaScript</p>
-            <p>Aprendí nuevos conocimientos y técnicas a través de cursos, documentación oficial y de la práctica constante. </p>
-            </div>
-
-
-            <div className='description__skills'>
-            <p className='number_writer'>03</p>
-            <p className="html__css">HTML CSS</p>
-            <p>In terms of practice, I worked on increasingly complex projects, using HTML and CSS to design and develop websites and web applications. </p>
-            
-            </div>
-                    </div>
+        <div className='skill_about_me'>
+        <img className="banner__img2" src={images.banner} alt="" />
+        <p className="about_me">Estoy comprometido con el aprendizaje constante y la mejora continua. Me encanta pensar fuera de la caja y encontrar soluciones creativas a los problemas de desarrollo web. Considero que mi pasión por la tecnología y mi ética de trabajo me convierten en un candidato ideal para cualquier proyecto de desarrollo web.</p>
             
         </div>
-        <div className='more_about_me' id="about">
-            <h3>More about me</h3>
-            <p>Despite my self-taught background, I have always known that I needed a formal education to consolidate my knowledge and take my career to the next level. Therefore, I am currently studying at Academlo, a recognized educational institution in the field of web development and digital technology.</p>
-            <a  className="check_linkeding" href="#">Check my linkedin</a>
-        </div>
+
         <div className='container_information'>
             <h1>Skillset</h1>
-            <p>These are the additional languages ​​and applications that I use as a web developer</p>
+            <p>Estos son los lenguajes y aplicaciones adicionales que uso como desarrollador web</p>
             <div className="bx_skill">
                 <div>
             <i className='bx bxs-extension'></i>
@@ -97,13 +68,17 @@ const Container = () => {
         </div>
         <div className='container_proyects' id="portafolio">
         <div className='iformation_proyect'>
-            <p>My proyects</p>
-            <p>These are some of the projects I've worked on</p>
+            <p>Mis proyectos</p>
+            <p>Estos son algunos de los proyectos en los que he trabajado</p>
             </div>
             <div className="card__proyect">
             <img className="proyect__img" src={images.img1} alt="" />
-                <p>Description</p>
-                <p>The e-commerce project was a valuable experience to improve skills in web development using JavaScript, HTML and CSS. A functional and visually attractive website was implemented, with a satisfactory user experience.</p>
+                <p>Descripción</p>
+                <div className="logos_description">
+                <img className="logo_skill" src={images.logojs} alt="" />
+                <img className="logo_skill" src={images.logohtml} alt="" />
+                <img className="logo_skill" src={images.logocss} alt="" />
+                </div>
                 </div>
                 <div className="card__proyect">
              <img className="proyect__img" src={images.img2} alt="" />

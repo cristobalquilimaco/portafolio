@@ -19,7 +19,7 @@ const Navbar = () => {
   };
 
   return (
-    // <div style={{ width: "8", height: "100vh" }}>
+
       <nav className="menu__nav">
 
         <div className="burger__menu" onClick={updateMenu}>
