@@ -7,6 +7,7 @@ import logocss from "/public/images/logocss.png"
 import logojs from "/public/images/logojs.png"
 import logohtml from "/public/images/logohtml.png"
 import logoreact from "/public/images/logoreact.png"
+import information from "/public/images/information.jpeg"
 
 
 export default {
@@ -19,6 +20,7 @@ export default {
     "logojs": logojs,
     "logohtml": logohtml,
     "logoreact": logoreact,
+    "information": information,
     
 
 }

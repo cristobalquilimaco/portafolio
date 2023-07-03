@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Sen&display=swap');
 
-/* //information me */
+
 body{
     font-family: 'Sen', sans-serif;
-    
+    padding: 0;
+    box-sizing: border-box;
 }
 
 
@@ -22,10 +23,22 @@ body{
     --card--information-color: #181823;
 }
 
+/* BANNER */
+.principal__container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 
-
-.banner{
+.info_banner{
     background-color: rgba(255, 0, 0, 0.13);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--card--information-color);
+    gap: 2rem;
 
 }
 
@@ -35,29 +48,19 @@ margin: 0;
 }
 
 
-body{
-    margin: 0;
-
-}
-
 .information__me{
-     
     background-color: var(--card--information-color);
     color: var(--letter-Color);
     text-align: center;
     display: flex;
     flex-direction: column;
-    gap: 1.4rem;
+    padding: 2rem;
 
 }
 
-.about_me{
-    font-size: 25px;
-    margin: 3rem;
-}
 
 .presentation{
-    font-size: 20px;
+  font-size: 40px;
     animation: move 1s infinite;
     transition: move.8s ease-in;
 }
@@ -119,10 +122,17 @@ body{
 
   .skill_about_me{
 display: flex;
-align-items: center;
 flex-direction: row-reverse;
+flex-wrap: wrap;
+align-items: center;
 justify-content: center;
+margin: 1rem;
+gap: 1rem;
+  }
 
+  .about_me{
+    font-size: 25px;
+width: 400px;
   }
 
   @keyframes appearFromRight {
@@ -139,7 +149,25 @@ justify-content: center;
   .banner__img2 {
     animation: appearFromRight 1s linear forwards;
     width: 400px;
+    clip-path: url(#wave);
 
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5);
+  }
+
+  @keyframes wave {
+    0% {
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+    50% {
+      clip-path: polygon(0 0, 100% 10%, 100% 90%, 0 100%);
+    }
+    100% {
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+  }
+  
+  .banner__img2 {
+    animation: wave 2s linear infinite;
   }
 
 
@@ -147,6 +175,23 @@ justify-content: center;
     display: block;
     color: #f3f3f383;
     
+}
+
+@keyframes slideFromRight {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.skill_about_me,
+.container_information,
+.skillsets {
+  animation: slideFromRight 1s ease-in-out;
 }
 
 .information_cut{
@@ -157,41 +202,22 @@ padding: 2rem;
 
 /* -------------------SKILL INFORMATION */
 
-.skills{
-    background-color: var(--information-Color);
-    color: var(--letter-Color);
-    display: flex;
-    flex-direction: column;
-    padding: 2rem;
-    
-}
+
 
 .logos_description{
 display: flex;
 align-items: center;
 justify-content: center;
-gap: 1rem;
+gap: 0.5rem;
+flex-wrap: wrap;
 }
 
 .logo_skill{
-    width: 50px;
+  padding: 0.2rem 1rem 0.2rem 1rem;
+    background-color: var(--information-Color1);
+    border-radius: 2rem;
 }
 
-
-
-.skills__cards{
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    justify-content: center;
-    align-items: center;
-   
-   }
-
-.description__skills{
-
-margin: 0;
-}
 
 
 .work__experience{
@@ -240,9 +266,6 @@ width: 137px;
 .container_information{
     background-color: var(--information-Color);
     color: var(--letter-Color);
-    padding: 2rem;
-    display: flex;
-    flex-direction: column;
     
 }
 
@@ -253,44 +276,70 @@ width: 137px;
 }
 
 .skillsets__Information{
-font-size: 15px;
+font-size: 20px;
 font-weight: 600;
 padding-bottom: 1.4rem;
 }
 
 .p_skils{
-    font-size: 12px;
+    font-size: 20px;
     color: var(--number-Color);
 }
 
 
-.bx_skill{
-    display: flex;
-    flex-direction: column;
-    
-        }
+.skillsets_int{
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 1rem;
+padding: 2rem;
+text-align: center;
+}
 
-        i {
-            animation: jump 1s infinite;
-          }
 
-          @keyframes jump {
-            0% { transform: translateY(0); }
-            50% { transform: translateY(-50px); }
-            100% { transform: translateY(0); }
-          }
+
+
+.skillsets{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+
+
+.my_skills{
+width: 200px;
+}
+
+
+
 
 .container_proyects{
     background-color: var(--information-Color);
     color: var(--letter-Color);
-    padding: 2rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     
+  
+}
 
+.cards_project{
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+gap: 4rem;
+align-items: center;
+justify-content: center;
+margin-top: 5rem;
+}
 
+.information_proyect{
+display: flex;
+flex-direction: column;
+text-align: center;
+}
+
+.title_projects{
+font-size: 30px;
 }
 
 .iformation_proyect p:nth-child(1){
@@ -299,10 +348,11 @@ margin-bottom: 1rem;
 text-align: center;
 }
 
-.iformation_proyect p:nth-child(2){
+.information_proyect p:nth-child(2){
     color: var(--letter-Color);
     font-size: 20px;
     margin-bottom: 2rem;
+  
    
     }
 
@@ -402,23 +452,7 @@ background: linear-gradient(to bottom right, #02192b, #000fb6);
 
 @media (min-width: 767px) {
 
-    .container_proyects{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        gap: 2rem;
-    }
-
     
-    .bx_skill{
-        margin-top: 100px;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-            }
-
 .iformation_proyect p:nth-child(1){
 font-size: 30px;
 }
@@ -436,13 +470,6 @@ font-size: 25px;
 
 }
 
-.skills{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-        text-align: justify;
-
-}
 
 .work__experience{
  color: var(--number-Color);
@@ -470,17 +497,6 @@ width: 450px;
 
 }
 
-
-
-.presentation{
-    font-size: 50px;
-    position: absolute;
-    
-    top: 150px;
-    left: 550px;
-
-
-}
 
 
 .information_cut{
